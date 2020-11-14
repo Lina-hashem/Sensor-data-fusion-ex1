@@ -18,9 +18,9 @@ class MovingObject:
                          initial_position[1]* np.sin((4*np.pi*v/initial_position[0]) * time),
                          np.sin((np.pi*v/initial_position[0]) * time)
                          ])
-    velocity = np.array([v*time, (np.cos((4*np.pi*v/initial_position[0])*time)*(4*np.pi*v/initial_position[0])),
+    velocity = np.array([v, (np.cos((4*np.pi*v/initial_position[0])*time)*(4*np.pi*v/initial_position[0])),
                              (np.cos((np.pi*v/initial_position[0])*time)*(np.pi*v/initial_position[0]))])
-    acc = np.array([time,
+    acc = np.array([0,
                     -1*(np.sin((4*np.pi*v/initial_position[0])*time)*(4*np.pi*v/initial_position[0])*(4*np.pi*v/initial_position[0])),
                         -1*(np.sin((np.pi*v/initial_position[0])*time)*(np.pi*v/initial_position[0])**(np.pi*v/initial_position[0]))])
    
